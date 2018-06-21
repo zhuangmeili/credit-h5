@@ -3,10 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store/index'
 
-//@zhuang start
+//http
 import http from './utils/http'
 Vue.prototype.$http = http;
-//@zhuang end
+
+//全局组件
+import ComToast from '@/components/ComToast'
+Vue.use(ComToast);
+//全局组件：end
 
 Vue.config.productionTip = false
 

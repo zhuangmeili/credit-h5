@@ -4,7 +4,7 @@
  *
  *
  * */
-//公共
-export const COM_LOADING='COM_LOADING';
+//toast 组件相关的状态
+export const COM_TOAST='COM_TOAST';
 
 

@@ -33,7 +33,6 @@ const actions = {
 // getters
 const getters = {
   bookMsg: state => state.bookMsg
-
 };
 
 // mutations

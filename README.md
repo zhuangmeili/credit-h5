@@ -34,6 +34,33 @@ credit-h5
     └── router.js
     └── store.js
 ```
-## css配置
+
+
+## 公共组件规范
+```
+# 公共组件命名规范
+components
+    └── ComToast //大驼峰命名、以Com开头
+        └── img
+        └── ComToast.vue
+        └── index.js
+
+# 公共组件 state 规范
+ store
+    ├── modules
+    │    └── common.js
+    └── types.js
+    └── index.js
+
+common.js（公共组件 放这里）
+    state命名规则： com组件名
+    例如：comToast
+
+types.js（公共组件对应的 types）
+    type命名规则：COM_组件名_其他
+    例如：COM_TOAST
+```
+
+
 
 
