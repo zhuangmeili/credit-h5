@@ -11,10 +11,13 @@ const state = {
   comToast: {
     isShow:false,
     mask:true,
-    duration:2000,
+    duration:3000,
     title:'加载中',
     icon:'loading'
   },
+};
+const actions={
+
 };
 // getters
 const getters = {
@@ -23,13 +26,15 @@ const getters = {
 // mutations
 const mutations = {
   [types.COM_TOAST](state,setting){
-    state = Object.assign(state,setting);
+    // 改变 state
+    Object.assign(state.comToast,setting);
   }
 };
 
 
 export default {
   state,
+  actions,
   getters,
   mutations
 }

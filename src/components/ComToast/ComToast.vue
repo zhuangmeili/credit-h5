@@ -18,12 +18,16 @@
     name: "ComToast",
     data(){
       return{
+        timer:null,
       }
     },
     computed:{
       ...mapGetters({
         comToast:'comToast'
       }),
+      isShow(){
+        return this.comToast.isShow;
+      },
       imgUrl(){
         let icon=this.comToast.icon;
         let url='';
@@ -39,6 +43,25 @@
             break;
         }
         return url;
+      }
+    },
+    mounted(){
+    },
+    //对象属性watch
+    watch:{
+      isShow(newVal){
+        newVal && this.closeToast();
+      }
+    },
+    methods:{
+      closeToast(){
+        let { duration }=this.comToast;
+        this.timer && clearTimeout(this.timer);
+        this.timer=setTimeout(()=>{
+          this.$store.commit('COM_TOAST',{
+            isShow:false
+          })
+        },duration);
       }
     }
   }

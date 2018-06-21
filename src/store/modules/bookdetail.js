@@ -4,7 +4,7 @@
  *
  *
  * */
-//import * as types from '../types';
+import * as types from '../types';
 import http from '../../utils/http'
 //local types
 const locals = {
@@ -21,13 +21,14 @@ const state = {
 const actions = {
   // getDetail({commit, state},payload){}
   getDetail({commit}) {
+    commit(types.COM_TOAST,{isShow:true});
     http.get({
       url:'/v2/book/1220562'
     }).then(res=>{
+      commit(types.COM_TOAST,{isShow:false});
       commit(locals.SET_DETAIL,res);
     })
   }
-
 };
 
 // getters

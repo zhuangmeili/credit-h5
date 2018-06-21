@@ -12,11 +12,11 @@ nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding
 ,"microsoft yahei";}
 
 html { color: #000;background: #fff;overflow-y: scroll;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
-html *{outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-text-size-adjust: none;font-size: 12px;}
+html *{outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-text-size-adjust: none;font-size: 100%;}
 input,button {-webkit-appearance: none; border: none;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 i,em,strong{font-style: normal;font-weight: normal;}
-h1, h2, h3, h4, h5, h6 {font-weight: normal; font-size: 12px;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal; font-size: 100%;}
 ul, ol, ul, li {list-style: none;}
 img,fieldset{border: none;}
 img{ vertical-align: middle;}
