@@ -1,7 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from './store/index'
+
+//@zhuang start
+import http from './utils/http'
+Vue.prototype.$http = http;
+//@zhuang end
 
 Vue.config.productionTip = false
 
