@@ -5,10 +5,10 @@ Vue.use(Vuex)
 
 
 //modules引入
-import count from './modules/count';
+import bookdetail from './modules/bookdetail';
 
 export default new Vuex.Store({
   modules:{
-    count
+    bookdetail
   }
 })
