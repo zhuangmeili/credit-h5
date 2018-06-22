@@ -3,7 +3,7 @@
     <div class="mask"></div>
     <section class="toast">
       <img class="img"  :src="imgUrl" alt="">
-      <p class="text">{{ comToast.title || 'loading'}}</p>
+      <p class="text">{{ comToast.title}}</p>
     </section>
   </div>
 </template>

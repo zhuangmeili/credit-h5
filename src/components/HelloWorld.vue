@@ -2,6 +2,9 @@
   <div class="wrap">
     <main class="main">
       <section>
+        <router-link class="link" to="/form">form page</router-link>
+      </section>
+      <section>
         <header> tags</header>
         <ul>
           <li class="item" v-for="(item,index) in bookMsg.tags" :key="index">
@@ -52,6 +55,8 @@ export default {
 <style scoped lang="scss">
   .main{
     padding:  0.7rem;
+    .link{
+      color: #31a5e0; text-decoration: underline;}
     .item{
       padding: 0.2rem;
       border-bottom: 1px solid #ddd;

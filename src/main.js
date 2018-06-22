@@ -8,7 +8,9 @@ import http from './utils/http'
 Vue.prototype.$http = http;
 
 //全局组件
+import ComModal from '@/components/ComModal'
 import ComToast from '@/components/ComToast'
+Vue.use(ComModal);
 Vue.use(ComToast);
 //全局组件：end
 

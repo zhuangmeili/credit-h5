@@ -7,6 +7,13 @@ import * as types from '../types';
 
 //state
 const state = {
+  comModal:{
+    isShow:false,
+    isCancel:true,
+    isConfirm:true,
+    title:'提示',
+    content:'这是一个模态弹窗'
+  },
   // toast 组件 state默认值
   comToast: {
     isShow:false,
@@ -14,19 +21,24 @@ const state = {
     duration:3000,
     title:'加载中',
     icon:'loading'
-  },
+  }
+
 };
 const actions={
 
 };
 // getters
 const getters = {
-  comToast: state => state.comToast
+  comModal: state => state.comModal,
+  comToast: state => state.comToast,
+
 };
-// mutations
+// mutations 改变 state
 const mutations = {
+  [types.COM_MODAL](state,setting){
+    Object.assign(state.comModal,setting);
+  },
   [types.COM_TOAST](state,setting){
-    // 改变 state
     Object.assign(state.comToast,setting);
   }
 };
