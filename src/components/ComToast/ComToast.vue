@@ -86,22 +86,22 @@
     }
     .toast{
       position: relative;
-      width: 250px;
-      height: 250px;
+      width: 6.25rem;
+      height: 6.25rem;
       background: rgba(0,0,0,0.65);
       text-align: center;
       border-radius: 10px;
       color: #fff;
       .img{
-        padding-top: 60px;
+        padding-top: 1.5rem;
         display: block;
         margin: 0 auto;
-        width: 80px; height: 80px;
+        width: 2rem; height: 2rem;
       }
       .text{
-        font-size: 24px;
-        margin-top: 30px;
-        line-height: 45px;
+        font-size: 0.6rem;
+        margin-top: 0.75rem;
+        line-height: 1.125rem;
       }
     }
   }

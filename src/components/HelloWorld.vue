@@ -69,13 +69,14 @@ export default {
         padding-left: 1rem;
       }
     }
-    .toast{ margin-top: 20px;}
+    .toast{ margin-top: 0.5rem;}
     .button{
       background: #3db1ff;
       border-radius: 2px;
-      line-height: 35px;
-      padding: 0 15px;
+      line-height: 1.5rem;
+      padding: 0 0.5rem;
       color: #fff;
+      font-size: 0.6rem;
     }
   }
 

@@ -53,7 +53,7 @@
     .main{
       width: 10rem;
       background: #fff;
-      border-radius: 10px;
+      border-radius: 0.5rem;
       padding-bottom: 1rem;
       .header{
         line-height: 2rem;
