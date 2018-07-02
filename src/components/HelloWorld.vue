@@ -3,6 +3,8 @@
     <main class="main">
       <section>
         <router-link class="link" to="/form">form page</router-link>
+        <br>
+        <router-link class="link" to="/refresh">refresh page</router-link>
       </section>
       <section>
         <header> tags</header>
