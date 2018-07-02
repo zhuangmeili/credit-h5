@@ -69,12 +69,7 @@
 
 <style scoped lang="scss">
   .wrap{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top:0;
-    z-index: 9999;
+
     .mask{
       position: absolute;
       left: 0;

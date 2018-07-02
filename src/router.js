@@ -5,6 +5,7 @@ import Router from 'vue-router'
 const Home=()=> import('./views/Home.vue');
 const About=()=> import('./views/About.vue');
 const FormView=()=> import('./views/FormView.vue');
+const RefreshView=()=> import('./views/RefreshView.vue');
 
 //组件引入
 Vue.use(Router)
@@ -13,6 +14,7 @@ export default new Router({
   routes: [
     {path: '/', name: 'home', component: Home},
     {path: '/about', name: 'about', component: About},
-    {path: '/form', name: 'formView', component: FormView}
+    {path: '/form', name: 'formView', component: FormView},
+    {path: '/refresh', name: 'refreshView', component: RefreshView},
   ]
 })

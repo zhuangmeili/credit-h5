@@ -10,8 +10,10 @@ Vue.prototype.$http = http;
 //全局组件
 import ComModal from '@/components/ComModal'
 import ComToast from '@/components/ComToast'
+import ComRefresh from '@/components/ComRefresh'
 Vue.use(ComModal);
 Vue.use(ComToast);
+Vue.use(ComRefresh);
 //全局组件：end
 
 Vue.config.productionTip = false

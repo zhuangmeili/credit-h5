@@ -115,7 +115,9 @@ comModal:{
   </div>
 </template>
 ```
-#### ComToast
+#### ComToast toast提示
+
+#### ComRefresh 下拉刷新
 
 
 

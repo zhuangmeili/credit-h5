@@ -7,7 +7,7 @@
 
 export const COM_TOAST='COM_TOAST'; //ComToast 组件相关的状态
 export const COM_MODAL='COM_MODAL'; //ComModal
-export const COM_MODAL_CONFIRM='COM_MODAL_CONFIRM';
+export const COM_REFRESH='COM_REFRESH';//ComRefresh
 
 
 
