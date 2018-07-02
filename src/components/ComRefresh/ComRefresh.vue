@@ -52,6 +52,7 @@
         this.startY=e.targetTouches[0].pageY;
         this.isTouching=true;
         this.isTransition=false;
+        this.tipText='松开刷新';
       },
       _touchMove(e){
         if(!this.isTouching){
