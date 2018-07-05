@@ -26,6 +26,7 @@
 .Flex4{ -webkit-box-flex: 4;  -webkit-flex:4;  flex: 4;}
 .Flex5{ -webkit-box-flex: 5;  -webkit-flex:5;  flex: 5;}
 .FlexVer{ -webkit-align-items: center;  align-items: center;}  /* 垂直居中 */
+.FlexVerEnd{ -webkit-align-items: flex-end; align-items:flex-end; } /* 垂直局底 */
 .FlexHor{ justify-content: center;-webkit-justify-content:center; } /*一行居中对齐*/
 .FlexBet{ -webkit-box-pack: justify;  -webkit-justify-content: space-between;  -ms-flex-pack:justify ;  justify-content: space-between;}  /*  两端对齐*/
 .FlexNoWrap{ flex-wrap: nowrap; -webkit-flex-wrap: nowrap;}
