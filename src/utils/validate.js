@@ -6,5 +6,8 @@ export const validate={
   },
   isMobile(val){
     return /^1[3456789]\d{9}$/.test(val)
+  },
+  isPrice(val){
+    return /^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/.test(val);
   }
 };

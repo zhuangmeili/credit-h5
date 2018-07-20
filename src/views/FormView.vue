@@ -6,10 +6,10 @@
           <input class="input" type="text" v-model="formData.name" placeholder="请输入名字">
         </li>
         <li class="formItem">
-          <input class="input" type="number" v-model="formData.age" placeholder="年龄">
+          <input class="input" type="number" v-model="formData.age" placeholder="年龄" >
         </li>
         <li class="formItem">
-          <input class="input" type="text" v-model="formData.school" placeholder="学校">
+          <input class="input" type="number" v-model="formData.price" placeholder="价格" ref="price">
         </li>
 
         <li class="formItem">
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+  import {validate} from '../utils/validate';
   export default {
     name: "FormView",
     data(){
@@ -29,10 +30,13 @@
         formData:{
           name:'',
           age:'',
-          school:''
+          price:''
         }
 
       }
+    },
+    mounted(){
+
     },
     methods:{
       submitForm(){
@@ -51,7 +55,7 @@
         this.$store.commit('COM_MODAL',{
           isShow:false
         });
-      }
+      },
     }
   }
 </script>
